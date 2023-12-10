@@ -1,0 +1,347 @@
+body {
+    background-color: #CCFFFF;
+    margin: 0;
+    overflow-x: hidden;
+     
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 10px; 
+}
+/* ---- logo styling---- */
+.box-1 {
+    width: 420px;
+    height: 170px;
+    background-image: url("ecshlogo1.png");
+    background-size: contain;
+    background-color: #CCFFFF;
+    background-image: radial-gradient(#CCFFFF, #FFFAF0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #FFFAF0;
+    width: 100%;   
+    color: #286c6c;
+    font-weight: bold;
+    text-align: right;
+    padding: 1em;
+  
+}
+
+nav a {
+    color: #e65925;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border: 4px solid #ffba00;
+    border-radius: 6px;
+    border-style: ridge
+
+}   
+.nav-background {
+    background-color: #FFFAF0; /* Your navigation background color */
+    width: 100%; /* Full width */
+    height: auto;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px; /* Add padding to the column */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+
+/* --- trying to fix display of images on home page to display in more appealing way and be responsive this is the bane of my course work -------------------- */
+/* ---------------------------------------------------- */
+
+
+/* ---------felt dumb might delete later ---------- */
+/* ------------------------------------------------ */
+
+
+.image-box {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+}
+
+.image-box img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto;
+    margin: auto;
+}
+
+.text-box {
+    flex: 1; 
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 10px; 
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.text-box h2 {
+    background-color: darkslategray; /* Pink background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* 10px top/bottom padding, 20px left/right padding */
+    border-radius: 10px;
+    margin: 0;
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+}
+
+.text-box p {
+    background-color: darkslategray; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 40px 20px; /* 10px top/bottom padding, 20px left/right padding */
+    border-radius: 10px;
+    margin: 6px 0; /* Adjust the margin between h2 and paragraph */
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+}
+footer {
+    background-color: #FFFAF0;
+    text-align: center;
+    padding: 1em 0;
+}
+/*--------adding for the about page--------*/
+.history, .mission-values, .activities {
+    background-color: darkslategray;
+    color: aliceblue;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    border-radius: 6px;
+}
+
+h2 {
+    color: darkblue; 
+    margin-bottom: 10px;
+}
+.about-header {
+    color: turquoise;
+    text-shadow: -1px 1px 1px teal;
+    font-size: 1.7em;
+    border-bottom: 9px solid;
+    border-bottom-color: aquamarine;
+}
+.image-class{
+    width: 50%;
+    float: left;
+}
+/*media Query for smaller screens*/
+@media screen and (max-width:768px){
+    .column{flex-direction: column;}
+   nav {
+        text-align: center; /* Center the links */
+       margin: auto;
+       font-size: 1.18em;
+    }
+
+    nav a {
+       display: block; /* Stack links vertically */
+        margin: 5px 0; /* Add some margin between links */
+        border-width: 2px; /* Adjust border width as needed */
+        border-radius: 6px; /* Adjust border-radius for a smoother look */
+        text-align: center; /* Center the text in each link */
+        padding: 10px; } 
+    .image-class{
+        width: 100%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    .child-ages-container {
+        flex-direction: column; /* Stack fields vertically on small screens */
+    }
+}
+    /* --table styling general-- */
+table{
+    max-width: 600px;
+    width:auto;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+table th{
+    background-color: #FFFAF0;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+}
+table td{
+    border: 1px solid #333;/* cell border */
+    padding: 10px;
+    text-align: center;
+    font-family: Veranda, Tahoma, sans-serif;
+   
+    
+}
+
+/*--  events page styling --*/
+
+h2.events-header {
+    text-align: center;
+    color: darkblue;
+    background-color: transparent;
+    padding: 10px;
+}
+h3.events-header {
+    text-align: center;
+    color: darkblue;
+    padding: 10px;
+    margin: 0 auto;
+    width: fit-content;
+}
+.events-table{
+    max-width: 600px;
+    width: auto;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 6px;
+}
+.events-table th, .evets-table td{
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+}
+.events-table th{
+    background-color: darkslategray;
+    color: white;
+}
+/* --Specific styles for past events-- */
+.events-table .past-event{
+    background-color: #F2F2F2;
+    color: dimgray;
+}
+/* -- Specific styles for next event to be used with Javascript in future to keep next event at the top of the list by automatically assigning  the next-event class to the row with the closest future date-- */
+.events-table .next-event{
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+}
+/*-- Upcoming events styling--*/
+.upcoming-events h3, .past-events h3 {
+    color: #4caf50;
+}
+/* ---------------------------------*/
+/* -- Registration Form styling -- */
+/* ---------------------------------*/
+.form-container{
+    border: 1px solid #ccc;
+    border-style: inset;
+    padding: 15px;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+}
+.reg-form {
+    max-width: 600px;
+    width: auto;
+    border: 1px black;
+
+}
+.reg-form label, .reg-form input, .reg-form select, .reg-form textarea {
+    display: block
+    align-items: flex-start;
+    width: auto;
+    margin-bottom: 10px;
+}
+.form-field{
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-field .checkbox-field{
+    display: flex;
+    align-items: center;
+}
+
+.form-field input[type="checkbox]"{
+    margin-right: 10px;
+}
+.form-field label{
+    flex: 1;
+    margin-right: 10px;
+}
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field select{
+flex-basis: 70%;
+}
+/* ------------------------------------------- */
+/* -----------child age drop down------------- */
+/* ------------------------------------------- */
+.child-ages-container {
+    display: flex; /* Aligns child age fields horizontally */
+    justify-content: space-around; /* Distribute space evenly around items */
+    flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+    width: 100%; /* Full width */
+}
+.age-field {
+    display: flex;
+    flex-direction: column; /* Stack label and dropdown vertically */
+    align-items: flex-start; /* Align to the start */
+    margin-right: 10px; /* Add some right margin */
+    text-align: start;  
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+.comments-field {
+    display: flex;
+    flex-direction: column; /* Stack label and textarea vertically */
+    margin-top: 20px; /* Space above the comments section */
+}
+
+.comments-field textarea {
+    width: 100%; /* Full width of the container */
+    /* Other styling as needed */
+}
+
+
+/* ---------------------------------------- */
+/* -----------blog page styling---------- */
+/* ------------------------------------------- */
+.blog-section{
+    margin:auto;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: azure;
+    margin-bottom: 50px;
+  
+}
+.blog-section img{
+    max-width: auto;
+    height: auto;
+    display: block;
+    margin: auto;/* space above the image */
+}
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

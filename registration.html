@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emerald Coast Secular Homeschool</title>
+    <link rel="stylesheet" type="text/css" href="ECSH.css">
+</head>
+<body> <!-- opening body tag -->
+    <div class="container"> <!-- Added container div -->
+        <div class="box-1">
+            <img src="ecshlogo1.png" alt="Emerald Coast Secular Homeschool"> <!-- changed the file name -->
+        </div>
+    </div>
+    <div class="nav-background">
+         <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &nbsp; 
+            <a href="about.html">About</a> &nbsp; 
+            <a href="events.html">Events</a> &nbsp; 
+            <a href="registration.html">Registration</a> &nbsp;
+            <a href="contact.html">Contact</a> &nbsp;
+            <a href="blog.html">Blog</a> &nbsp;
+        </nav>
+    </div>
+    </div>
+     <!-- Event Registration Form -->
+    <div class="form-container">
+        <h2 class="events-header">Event Registration</h2>
+        <form class="reg-form" action="" method="post">
+           
+        <!-- adult name -->    
+            <div class="form-field">
+            <label for="adultName">Name of Adult Attending:</label>
+            <input type="text" id="adultName" name="adultName" required><br>
+            </div>
+            
+        <!-- Phone -->    
+            <div class="form-field">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+            </div>
+            
+        <!-- email -->    
+            <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            </div>
+            
+        <!-- opt in -->    
+            <div class="form-field">
+            Opt-in for Group Message/Text
+            <input type="checkbox" id="groupMessageOptIn" name="groupMessageOptIn">
+            <label for="groupMessageOptIn"> 
+            </label><br>
+            </div>
+            
+        <!-- child names -->    
+            <div class="form-field">
+            <label for="childrenNames">Names of Children Attending:</label>
+            <input type="text" id="childrenNames" name="childrenNames"><br>
+            </div>
+            
+        <!-- child ages -->    
+           <div class="child-ages-container">
+            
+            <div class="age-field">
+            <label for="childAge1">Age of Child 1:</label>
+            <select id="childAge1" name="childAge1">
+                <option value="">Select Age</option>
+                <!-- Populate with age ranges or specific ages -->
+                <option value="0-2">0-2 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="6-8">6-8 years</option>
+                <option value="9-11">9-11 years</option>
+                <option value="12-14">12-14 years</option>
+                <option value="15-17">15-17 years</option>
+            </select>
+          
+            
+        
+            <label for="childAge2">Age of Child 2:</label>
+            <select id="childAge2" name="childAge2">
+                <option value="">Select Age</option>
+                <!-- Populate with age ranges or specific ages -->
+                <option value="0-2">0-2 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="6-8">6-8 years</option>
+                <option value="9-11">9-11 years</option>
+                <option value="12-14">12-14 years</option>
+                <option value="15-17">15-17 years</option>
+            </select>
+        
+            
+         
+            <label for="childAge3">Age of Child 3:</label>
+            <select id="childAge3" name="childAge3">
+                <option value="">Select Age</option>
+                <!-- Populate with age ranges or specific ages -->
+                <option value="0-2">0-2 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="6-8">6-8 years</option>
+                <option value="9-11">9-11 years</option>
+                <option value="12-14">12-14 years</option>
+                <option value="15-17">15-17 years</option>
+            </select>
+            </div>
+            </div>
+               
+        <!-- event selection -->    
+            <div class="form-field">
+            <label for="eventSelection">Select Event:</label>
+            <select id="eventSelection" name="eventSelection">
+                <!-- Event options can be added here -->
+                <option value="event1">Photo Ornament Craft December 4</option>
+                <option value="event2">Seasonal Craft December 11</option>
+                <option value="event3">Seasonal Craft December 18</option>
+                <!-- Add more events as needed -->
+            </select><br>
+            </div>
+
+        <!-- comments -->    
+            <div class="comments-field">
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments"></textarea><br>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <footer>
+        <p><i>Copyright Emerald Coast Secular Homeschool 2023</i></p>
+    </footer>
+</body>
+</html>
